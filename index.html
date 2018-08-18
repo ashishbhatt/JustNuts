@@ -22,8 +22,8 @@
       <![endif]-->
     </head>
     <body>
-      <div class="container-fluid">
-        <nav class="navbar navbar-default row">
+      <div class="container-fluid" id="top">
+        <nav class="navbar navbar-default row navbar-me">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
@@ -38,12 +38,12 @@
             </div>
             <div id="navbar9" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-left col-lg-5 left-nav">
-                <li class=""><a href="#">Product</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right col-lg-5">
-                <li class="active"><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -91,7 +91,7 @@
         </div>
         <!--/.container-fluid -->
       </div>
-      <section class="container">
+      <section class="container" id="about" data-section="about">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1 class="headings">about almond</h1>
@@ -114,8 +114,8 @@
         </div>
       </section>
       <!-- end all dry fruits -->
-      <section class="container">
-        <div class="">
+      <section class="container-fluid light-grey-bg">
+        <div class="container">
           <h1 class="headings">New arrival</h1>
           <div class="slider slider-nav">
             <div class="">
@@ -213,7 +213,7 @@
         </div>
       </section>
       <!-- end slider -->
-      <section class="container">
+      <section class="container" id="product">
         <h1 class="headings">Latest Nut’s Pack</h1>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
@@ -264,10 +264,71 @@
         </div>
       </section>
       <!-- end latest nuts-->
-      
+      <!-- contact form -->
+      <section id="contact" class="container panel-body">
+        <h1 class="headings">contact us</h1>
+        <div class="row">
+          <div class="col-sm-5 hidden-xs">
+            <p class="">
+              Somani Agro Impex,<br>
+              203, AT. Vanzar Post Sarkhej-Dholka Road,<br>
+              Sarkhej,<br>
+              Ahmedabad - 382210,<br>
+              Gujarat - INDIA,<br>
+              Ph: <a href="" type="tel">+9179 65100009</a>   <br>M: 9925009629, 9825300076,<br>
+            </p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+          <form>
+            <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <input type="text" class="form-control" id="inputMessage" placeholder="Message">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      </div>
+    </section>
+      <a href="#top" class="top"><i class="fa fa-arrow-up"></i></a>
+      <span class="clearfix"></span>
+      <div class="container-fluid f-address">
+        <div class="row">
+            <div class="container panel-body">
+              <div class="col-sm-6 col-xs-12 address">
+                <h2>Ahmedabad</h2>
+                <p class="">
+                  Somani Agro Impex,<br>
+                  203, AT. Vanzar Post Sarkhej-Dholka Road,<br>
+                  Sarkhej,<br>
+                  Ahmedabad - 382210,<br>
+                  Gujarat - INDIA,<br>
+                  Ph: <a href="" type="tel">+9179 65100009</a>   M: 9925009629, 9825300076,<br>
+                </p>
+              </div>
+              <div class="col-sm-6 col-xs-12 address">
+                <div id="googleMap"></div>
+              </div>
+            </div>
+          </div>
+      </div>
       <footer class="navbar fixed-bottom navbar-light bg-light">
-        <div class="container">
-          <div class="row margin-t-20 footer-center">
+        <div class="container-fluid">
+         <div class="row margin-t-20 footer-center">
+            <div class="col-md-2 col-sm-2 col-xs-12"><a class="footer-logo" href=""><img src="assets/just-nuts-logo.png" class="img-responsive"></a></div>
             <div class="col-md-6 col-sm-6 col-xs-12">
               <ul class="menu list-inline footer-link">                      
                 <li>
@@ -287,7 +348,7 @@
                 </li>           
               </ul>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+            <div class="col-md-4 col-sm-4 col-xs-12 text-right">
               <ul class="list-inline footer-social">
                <li>
                 <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
@@ -301,166 +362,82 @@
             </ul>
           </div>
         </div> 
-        <p class="text-center">&copy; Copyright 2018 | Just Nuts</p>
+        <!-- <p class="text-center">&copy; Copyright 2018 | Just Nuts</p> -->
       </div>
     </footer>
     <!-- /#wrapper --> 
     <!-- jQuery --> 
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript --> 
     <script src="js/bootstrap.min.js"></script> 
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/star-rating.js"></script>
     <script type="text/javascript">
-     $('.responsive').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-           //star rating
-           var __slice = [].slice;
+      $(window).scroll(function() {
+        if($(this).scrollTop()>5) {
+          $( ".navbar-me" ).addClass("fixed-me");
+        } else {
+          $( ".navbar-me" ).removeClass("fixed-me");
+        }
+      });
+      // end fixed navbar
+      $('.slider-for').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: false,
+       fade: true,
+       asNavFor: '.slider-nav'
+     });
+      $('.slider-nav').slick({
+       slidesToShow: 4,
+       slidesToScroll: 1,
+       asNavFor: '.slider-for',
+       dots: true,
+       focusOnSelect: true
+     });
 
-           (function($, window) {
-            var Starrr;
+      $('a[data-slide]').click(function(e) {
+       e.preventDefault();
+       var slideno = $(this).data('slide');
+       $('.slider-nav').slick('slickGoTo', slideno - 1);
+     });
+     //scroll
+     $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-            Starrr = (function() {
-              Starrr.prototype.defaults = {
-                rating: void 0,
-                numStars: 5,
-                change: function(e, value) {}
-              };
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-              function Starrr($el, options) {
-                var i, _, _ref,
-                _this = this;
+      // Store hash
+      var hash = this.hash;
 
-                this.options = $.extend({}, this.defaults, options);
-                this.$el = $el;
-                _ref = this.defaults;
-                for (i in _ref) {
-                  _ = _ref[i];
-                  if (this.$el.data(i) != null) {
-                    this.options[i] = this.$el.data(i);
-                  }
-                }
-                this.createStars();
-                this.syncRating();
-                this.$el.on('mouseover.starrr', 'span', function(e) {
-                  return _this.syncRating(_this.$el.find('span').index(e.currentTarget) + 1);
-                });
-                this.$el.on('mouseout.starrr', function() {
-                  return _this.syncRating();
-                });
-                this.$el.on('click.starrr', 'span', function(e) {
-                  return _this.setRating(_this.$el.find('span').index(e.currentTarget) + 1);
-                });
-                this.$el.on('starrr:change', this.options.change);
-              }
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
 
-              Starrr.prototype.createStars = function() {
-                var _i, _ref, _results;
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+}); 
+</script>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 
-                _results = [];
-                for (_i = 1, _ref = this.options.numStars; 1 <= _ref ? _i <= _ref : _i >= _ref; 1 <= _ref ? _i++ : _i--) {
-                  _results.push(this.$el.append("<span class='glyphicon .glyphicon-star-empty'></span>"));
-                }
-                return _results;
-              };
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
-              Starrr.prototype.setRating = function(rating) {
-                if (this.options.rating === rating) {
-                  rating = void 0;
-                }
-                this.options.rating = rating;
-                this.syncRating();
-                return this.$el.trigger('starrr:change', rating);
-              };
-
-              Starrr.prototype.syncRating = function(rating) {
-                var i, _i, _j, _ref;
-
-                rating || (rating = this.options.rating);
-                if (rating) {
-                  for (i = _i = 0, _ref = rating - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
-                    this.$el.find('span').eq(i).removeClass('glyphicon-star-empty').addClass('glyphicon-star');
-                  }
-                }
-                if (rating && rating < 5) {
-                  for (i = _j = rating; rating <= 4 ? _j <= 4 : _j >= 4; i = rating <= 4 ? ++_j : --_j) {
-                    this.$el.find('span').eq(i).removeClass('glyphicon-star').addClass('glyphicon-star-empty');
-                  }
-                }
-                if (!rating) {
-                  return this.$el.find('span').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
-                }
-              };
-
-              return Starrr;
-
-            })();
-            return $.fn.extend({
-              starrr: function() {
-                var args, option;
-
-                option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
-                return this.each(function() {
-                  var data;
-
-                  data = $(this).data('star-rating');
-                  if (!data) {
-                    $(this).data('star-rating', (data = new Starrr($(this), option)));
-                  }
-                  if (typeof option === 'string') {
-                    return data[option].apply(data, args);
-                  }
-                });
-              }
-            });
-          })(window.jQuery, window);
-
-          $(function() {
-            return $(".starrr").starrr();
-          });
-
-          $( document ).ready(function() {
-
-            $('#stars').on('starrr:change', function(e, value){
-              $('#count').html(value);
-            });
-            
-            $('#stars-existing').on('starrr:change', function(e, value){
-              $('#count-existing').html(value);
-            });
-          });
-        </script>
-      </body>
-      </html>
+</body>
+</html>
