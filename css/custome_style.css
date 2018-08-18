@@ -3,7 +3,7 @@
 }
 .navbar-brand>img {
   height: 100%;
-  padding: 15px;
+  padding: 7px;
   width: auto;
 }
 
@@ -52,10 +52,10 @@
   border-bottom: transparent;
 }
 .navbar-brand{
-  height: 180px;
+  height: 155px;
 }
 #navbar9 {
-    padding-top: 80px;
+    padding-top: 55px;
 }
 .navbar-default .navbar-nav > li > a {
   color: #442d13;
@@ -70,10 +70,13 @@
   background-color: #e5a53e;
 }
 .navbar{
-  min-height: 180px;
+  min-height: 155px;
 }
 #myCarousel{
-  /*margin-top: 180px;*/
+ /* margin-top: 180px;*/
+}
+.carousel-inner .item{
+  max-height: 415px;
 }
 a{
   transition: 0.6s all;
@@ -84,7 +87,7 @@ a{
     text-shadow: 0px 0px 6px #333;
   }
 .carousel-caption img{
-  width: 75%;
+  width: 60%;
   margin:0 auto;
   filter: drop-shadow(0px 0px 10px #000); 
 }
@@ -96,7 +99,7 @@ a{
   height: 100px;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 5;
   margin-top: -10px;
   left: 25%;
@@ -108,7 +111,7 @@ a{
   height: 100px;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 5;
   margin-top: -10px;
   right:25%;
@@ -136,6 +139,7 @@ a{
   color: #fff;
   height: 290px;
   margin-bottom: 30px;
+  display: flex;
 }
 .yellow-box {
   width: 85%;
@@ -181,6 +185,21 @@ a{
   color:#000;
   margin-bottom: 0px;
 }
+.f-address{
+  background-color: #1b0c03;
+}
+
+.address{
+  font-size: 16px;
+  line-height: 30px;
+  color:#fff;
+  margin:2.5% 0; 
+}
+.footer-logo{
+  filter: drop-shadow(0px 0px 1px #fff);
+  padding-top: 20px;
+  display: block;
+}
 footer .menu li a{
   color:#b1aca1;
   padding:10px;
@@ -200,7 +219,7 @@ footer .menu li a:hover{
 .fa.fa-google-plus , 
 .fa.fa-tumblr {
   color:#b1aca1;
-  font-size:20px;
+  font-size:16px;
   padding:10px;
 }
 
@@ -219,29 +238,93 @@ footer .menu li a:hover{
   margin-bottom: 30px;
 }
 ul.footer-link{
-  margin-top: 16px;
+  margin-top: 66px;
 }
 ul.footer-link li a{
-  color:#000;
+  color:#ffbc27;
+  font-size: 16px;
+  font-weight: 600;
 }
 ul.footer-link li a:hover{
+  text-decoration: underline;
   color:#ffbc27;
 }
+ul.footer-social{
+  margin-top: 66px;
+}
 ul.footer-social li a{
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 35px;
+  height: 35px;
+  border-radius: 18px;
   display: block;
   text-align: center;
-  line-height: 55px;
+  line-height: 35px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.top {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  border: 1px solid #241a14;
+  color:#241a14;
+  z-index: 1050;
+  left: auto;
+  background-color: #ffbc27;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 2.4;
+}
+
+/*--fixed navbar--*/
+.fixed-me{
+    background-color:rgba(255, 255, 255, 1) !important;
+    padding: 0px  !important;
+    margin-bottom: 5px;
+    position: fixed;
+    top:0;
+    z-index:888;
+    width: 100%;
+    transition: all 0.5s ;
+    border-bottom: 1px solid #4b351c;
+}
+
+.navbar-me{
+    padding: 0px 0px;
+    background-color: transparent;
+    top: 0px;
+    border-radius: 0px;
+   transition: all 0.5s ;
+   margin-bottom: 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.fixed-me .navbar-brand {
+    height: 80px;
+}
+.fixed-me #navbar9 {
+  padding-top: 15px;
+}
+.fixed-me.navbar {
+  min-height: 80px;
+}
+#googleMap {
+      height: 250px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+#contact, #product, #about, #news{padding-top: 60px;}
 @media screen and (max-width: 767px){
   .left-nav li {
       float: none;
   }
   .navbar-brand {
-    height: 80px;
+    height: 50px;
+  }
+  .navbar-brand > img{
+    padding: 5px;
   }
   .navbar {
     min-height: 50px;
@@ -284,5 +367,24 @@ ul.footer-social li a{
     margin-top: 30px;
     overflow: hidden;
     width: auto;
+  }
+  .fixed-me.navbar {
+    min-height: 50px;
+  }
+  .fixed-me .navbar-brand {
+    height: 50px;
+  }
+  ul.footer-social {
+    margin-top: 16px;
+  }
+  .footer-logo {
+    filter: drop-shadow(0px 0px 1px #fff);
+    padding-top: 20px;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+  ul.footer-link {
+    margin-top: 36px;
   }
 }
